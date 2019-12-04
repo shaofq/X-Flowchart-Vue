@@ -6,10 +6,10 @@
 
 export default {
   version: '3.0.0',
-  name: 'XFC',
-  title: 'XFC',
-  subtitle: 'XFC',
-  minTitle: 'XFC',
+  name: '流程定义',
+  title: '流程定义',
+  subtitle: '流程定义',
+  minTitle: '流程定义',
   logo: require('@/assets/images/logo.png'),
   github: 'https://github.com/OXOYO/X-Flowchart-Vue',
   githubPages: 'http://oxoyo.co/X-Flowchart-Vue/',

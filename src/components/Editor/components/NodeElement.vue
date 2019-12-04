@@ -11,7 +11,7 @@
     border: 1px solid transparent;
 
     &:hover {
-      border-color: rgba(0, 0, 0, .1);
+      border-color:red;
       cursor: move;
     }
     .content {
@@ -22,7 +22,7 @@
       .icon {
         left: 1px;
         top: 1px;
-        width: 32px;
+        width: 62px;
         height: 30px;
         display: block;
         position: relative;
@@ -38,7 +38,7 @@
     :style="elementStyle"
     @mousedown="handleMouseDown"
   >
-    <div class="content" :title="title">
+    <div class="content" :title="title" >
       <svg class="icon" v-html="info.icon">
       </svg>
     </div>
@@ -61,7 +61,7 @@
             shape: 'circle',
             label: 'circle',
             enable: true,
-            width: 40,
+            width: 60,
             height: 40,
             anchorPoints: [ [0, 0], [0, 1], [1, 0], [1, 1] ],
             svg: ``
@@ -70,7 +70,7 @@
       },
       width: {
         type: Number,
-        default: 40
+        default: 60
       },
       height: {
         type: Number,

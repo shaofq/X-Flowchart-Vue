@@ -31,7 +31,7 @@ import and from './and'
 import dataStorage from './data-storage'
 import bidirectionalArrow from './bidirectional-arrow'
 import arrow from './arrow'
-
+import imagecustom from './imagecustom'
 export default {
   rectangle,
   roundedRectangle,
@@ -59,5 +59,6 @@ export default {
   and,
   dataStorage,
   bidirectionalArrow,
-  arrow
+  arrow,
+  imagecustom
 }

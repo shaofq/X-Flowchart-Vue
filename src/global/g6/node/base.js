@@ -7,12 +7,15 @@ import utils from '../utils'
 
 export default {
   shape: null,
+
   drawShape (cfg, group) {
     const shapeType = this.shapeType
     const style = this.getShapeStyle(cfg)
     const shape = group.addShape(shapeType, {
       attrs: style
     })
+    //添加文本
+    this.drawLabel(cfg, group);
     this.shape = shape
     return shape
   },
@@ -55,5 +58,6 @@ export default {
     utils.anchor.draw(cfg, group)
     // 绘制shapeControl
     utils.shapeControl.draw(cfg, group)
+
   }
 }

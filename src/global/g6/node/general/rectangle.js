@@ -14,7 +14,9 @@ export default {
   options: {
     ...base,
     shapeType: 'path',
+    label:'bbb',
     getShapeStyle (cfg) {
+      console.info('aaa234324234332432');
       const size = this.getSize(cfg)
       const width = size[0]
       const height = size[1]
@@ -44,6 +46,26 @@ export default {
         stroke: color
       }, cfg.style)
       return style
+    },
+    drawLabel(cfg, group){
+      console.info('234324234332432');
+      const labelCfg = cfg.labelCfg || {}
+      const labelStyle = this.getLabelStyle(cfg, labelCfg, group)
+      const text = group.addShape('text', {
+        attrs: {
+          ...labelStyle,
+          text: cfg.label||'起始节点',
+          fontSize: 12,
+          fill: '#404040',
+          cursor: 'pointer'
+        },
+        className: 'edge-label'
+      })
+  
+      return text
+
     }
+
+
   }
 }
